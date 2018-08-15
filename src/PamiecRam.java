@@ -22,7 +22,8 @@ public class PamiecRam extends ElementNagrzewajacy {
         } else {
             taktowanie = taktowanie + dodatkoweTaktowanie;
             tempTaktowania +=wzrostTemperatury;
-            System.out.println("zwiększono taktowanie RAM"+"\ntaktowanie:"+taktowanie+" \ntemperatura:"+tempTaktowania);
+
+
         }
     }
 }

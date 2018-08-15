@@ -6,15 +6,22 @@ public class Test {
         Komputer komputer = new Komputer(procesor, pamiecRam, dyskTwardy);
         try {
             procesor.zwiekszTaktowanie(100);
+            System.out.println("zwiększono taktowanie procesora"+"\ntaktowanie:"
+                    +procesor.getTaktowanie()+" \ntemperatura:"+procesor.getTempTaktowania());
             procesor.zwiekszTaktowanie(500);
-
+            System.out.println("zwiększono taktowanie procesora"+"\ntaktowanie:"
+                    +procesor.getTaktowanie()+" \ntemperatura:"+procesor.getTempTaktowania());
         } catch (TemperaturaPrzekroczona e) {
             System.out.println(e.getMessage());
         }
         try {
 
             pamiecRam.zwiekszTaktowanie(100);
+            System.out.println("zwiększono taktowanie RAM"+"\ntaktowanie:"
+                    +pamiecRam.getTaktowanie()+" \ntemperatura:"+pamiecRam.getTempTaktowania());
             pamiecRam.zwiekszTaktowanie(500);
+            System.out.println("zwiększono taktowanie RAM"+"\ntaktowanie:"
+                    +pamiecRam.getTaktowanie()+" \ntemperatura:"+pamiecRam.getTempTaktowania());
 
         } catch (TemperaturaPrzekroczona e) {
             System.out.println(e.getMessage());

@@ -11,7 +11,6 @@ public class Procesor extends ElementNagrzewajacy {
         } else {
             taktowanie = taktowanie + dodatkoweTaktowanie;
             tempTaktowania +=wzrostTemperatury;
-            System.out.println("zwiększono taktowanie procesora"+"\ntaktowanie:"+taktowanie+" \ntemperatura:"+tempTaktowania);
         }
     }
 
